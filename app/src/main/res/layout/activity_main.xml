@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnSelectLanguages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="--Select Language--"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnTapToSpeak"
+        android:layout_width="match_parent"
+        android:layout_height="281dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/ic_speak"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/tfSpeakingText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSelectLanguages" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Tap to Speak"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/btnTapToSpeak"
+        app:layout_constraintTop_toBottomOf="@+id/btnSelectLanguages" />
+
+    <EditText
+        android:id="@+id/tfSpeakingText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:textColor="@color/design_default_color_primary"
+        android:textCursorDrawable="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnShareText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTapToSpeak" />
+
+
+    <Button
+        android:id="@+id/btnCopyText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:text="Copy Text"
+        app:layout_constraintBottom_toTopOf="@+id/adView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnShareText"
+        tools:layout_weight="0.5" />
+
+    <Button
+        android:id="@+id/btnShareText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:text="Share Now"
+        app:layout_constraintBottom_toTopOf="@+id/adView"
+        app:layout_constraintEnd_toStartOf="@+id/btnCopyText"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_weight="0.5" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-1334842701243024/7979706376"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

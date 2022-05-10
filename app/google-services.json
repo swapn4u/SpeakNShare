@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "403325831761",
+    "firebase_url": "https://speaknshare-5ea2f.firebaseio.com",
+    "project_id": "speaknshare-5ea2f",
+    "storage_bucket": "speaknshare-5ea2f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:403325831761:android:1a57a8562e8855aa3c8670",
+        "android_client_info": {
+          "package_name": "com.swapn4u.speaknshare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "403325831761-gguv80j83s0g3fkme0o1f12k69vj7g5l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlvmJDfYLi00yDxaDb0-6AlPYpjnwfpks"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "403325831761-gguv80j83s0g3fkme0o1f12k69vj7g5l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
